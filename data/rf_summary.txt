@@ -1,0 +1,28 @@
+
+=== 随机森林分类结果摘要 ===
+
+数据集规模: 10000 条记录
+训练集: 7000 | 测试集: 3000
+
+模型参数:
+- n_estimators: 100
+- max_depth: 10
+- min_samples_split: 10
+
+模型性能:
+- Accuracy: 0.9943
+- Precision: 0.9901
+- Recall: 0.9912
+- F1 Score: 0.9906
+- AUC: 0.9999
+
+特征重要性排序:
+               特征      重要性
+   activity_score 0.400246
+    rfm_frequency 0.270454
+     rfm_monetary 0.251078
+monetary_per_freq 0.039970
+     recency_days 0.038252
+
+结论: 模型能够有效识别高价值客户，AUC 达到 1.00，
+其中最重要的预测因素是 activity_score。
